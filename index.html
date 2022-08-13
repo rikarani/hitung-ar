@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- breakpoint sm buat responsive-->
+<!-- yang di dalam kurung siku nanti digenerate pakek JS -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Calculator</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="final.css" />
+  </head>
+  <body class="bg-white dark:bg-slate-900">
+    <!-- Navbar -->
+    <section id="navbar">
+      <div class="container mt-2 flex items-center justify-between px-2 sm:max-w-2xl">
+        <!-- Logo Github -->
+        <div class="logo h-12 w-12">
+          <a href="https://github.com/rikarani/hitung-ar" target="_blank">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="dark:invert">
+              <!-- <title>GitHub</title> -->
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- Logo Github -->
+
+        <!-- Toggle Dark Mode -->
+        <div class="dark-toggle">
+          <div class="flex dark:text-slate-300">
+            <span class="mr-2 text-sm font-medium">Light</span>
+            <input type="checkbox" id="dark-toggle" class="hidden" />
+            <label for="dark-toggle">
+              <div class="relative flex h-6 w-11 cursor-pointer items-center rounded-full bg-primary dark:bg-slate-500">
+                <div class="toggle-circle absolute top-[2px] left-[2px] h-5 w-5 rounded-full bg-white transition duration-300 ease-in-out"></div>
+              </div>
+            </label>
+            <span class="ml-2 text-sm font-medium">Dark</span>
+          </div>
+        </div>
+        <!-- Toggle Dark Mode -->
+      </div>
+    </section>
+    <!-- Navbar -->
+
+    <!-- Judul Website -->
+    <section class="judul">
+      <div class="container px-2 sm:max-w-2xl">
+        <!-- Logo Website -->
+        <div class="logo-website mx-auto h-32 w-32">
+          <img src="img/logo.png" alt="Paimin" />
+        </div>
+        <!-- Logo Website -->
+
+        <!-- Deskripsi Website -->
+        <div class="deskripsi-website text-center">
+          <h1 class="text-3xl font-semibold text-primary dark:text-slate-200">Hitung AR</h1>
+          <p class="text-lg font-medium leading-tight tracking-widest dark:text-slate-200">Tools Sederhana Untuk Menghitung Berapa Banyak AR EXP yang dibutuhkan & Perkiraan Hari untuk mencapai Target AR</p>
+        </div>
+        <!-- Deskripsi Website -->
+      </div>
+    </section>
+    <!-- Judul Website -->
+
+    <!-- Konten -->
+    <section id="konten">
+      <div class="container mt-2 divide-y divide-black bg-primary/50 px-2 py-2 dark:divide-white dark:bg-slate-700 sm:flex sm:max-w-3xl sm:divide-y-0 sm:divide-x sm:rounded-md [&>div]:flex-[1]">
+        <div class="hitung sm:mr-6">
+          <div class="akun">
+            <div class="tanya inline-block">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:fill-white" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="form-akun mt-2">
+              <form action="" class="flex space-x-5">
+                <div class="relative z-0">
+                  <input
+                    type="number"
+                    id="currentAR"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white"
+                    placeholder=" "
+                  />
+                  <label
+                    for="currentAR"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    >AR Sekarang</label
+                  >
+                </div>
+
+                <div class="relative z-0">
+                  <input
+                    type="number"
+                    id="expAR"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white"
+                    placeholder=" "
+                  />
+                  <label
+                    for="expAR"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    >AR EXP</label
+                  >
+                </div>
+
+                <div class="relative z-0">
+                  <input
+                    type="number"
+                    id="targetAR"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white"
+                    placeholder=" "
+                  />
+                  <label
+                    for="targetAR"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    >Target AR</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="daily mt-4">
+            <div class="flex space-x-2">
+              <span class="dark:text-white">Hitung Perkiraan Hari?</span>
+
+              <div class="daily-toggle">
+                <div class="flex items-center">
+                  <span class="mr-2 text-sm font-medium dark:text-white">Tidak</span>
+                  <input type="checkbox" id="daily-toggle" class="hidden" />
+                  <label for="daily-toggle">
+                    <div class="relative mt-[2px] flex h-6 w-11 cursor-pointer items-center rounded-full bg-primary dark:bg-slate-500">
+                      <div class="toggle-circle absolute top-[2px] left-[2px] h-5 w-5 rounded-full bg-white transition duration-300 ease-in-out sm:top-[2px]"></div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm font-medium dark:text-white">Ya</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-daily hidden">
+              <form action="" class="mt-3 mb-4 flex space-x-5">
+                <div class="relative z-0">
+                  <input
+                    type="number"
+                    id="commission"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white"
+                    placeholder=" "
+                  />
+                  <label
+                    for="commision"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    >Commission</label
+                  >
+                </div>
+
+                <div class="relative z-0">
+                  <input
+                    type="number"
+                    id="resin"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white"
+                    placeholder=" "
+                  />
+                  <label
+                    for="resin"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    >Resin</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="hasil mt-3">
+          <div class="hasil-exp mt-2 sm:ml-4">
+            <p class="text-sm font-semibold dark:text-white sm:text-lg">Butuh <span class="font-bold">[arEXP] AR EXP</span> lagi untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
+
+            <div class="progress-bar mt-2">
+              <div class="tulisan flex justify-between sm:mt-4">
+                <span class="self-end text-xs dark:text-white">Progress : [30%]</span>
+                <span class="self-end text-xs dark:text-white">[expAR]/[expNeeded]</span>
+              </div>
+              <div class="progress relative h-2 w-full overflow-hidden rounded-md bg-black dark:bg-white">
+                <div class="progress-fill h-full w-[30%] bg-white dark:bg-green-500"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hasil-daily mt-3 hidden text-sm sm:mt-9 sm:ml-4 sm:text-lg">
+            <p class="font-semibold dark:text-white"><span class="font-bold">&PlusMinus;[10] Hari</span> untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Konten -->
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
