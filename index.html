@@ -3,15 +3,20 @@
 <!-- yang di dalam kurung siku nanti digenerate pakek JS -->
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Genshin Impact AR Calculator" />
+    <meta name="keywords" content="Genshin, Impact, AR Calculator" />
+    <meta name="author" content="rikarani" />
+    <!-- Meta Tags -->
     <title>AR Calculator</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="final.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-white dark:bg-slate-900">
+  <body class="bg-cyan-100 dark:bg-slate-900">
     <!-- Navbar -->
     <section id="navbar">
       <div class="container mt-2 flex items-center justify-between px-2 sm:max-w-2xl">
@@ -57,7 +62,7 @@
 
         <!-- Deskripsi Website -->
         <div class="deskripsi-website text-center">
-          <h1 class="text-3xl font-semibold text-primary dark:text-slate-200">Hitung AR</h1>
+          <h1 class="text-3xl font-semibold dark:text-slate-200">Hitung AR</h1>
           <p class="text-lg font-medium leading-tight tracking-widest dark:text-slate-200">Tools Sederhana Untuk Menghitung Berapa Banyak AR EXP yang dibutuhkan & Perkiraan Hari untuk mencapai Target AR</p>
         </div>
         <!-- Deskripsi Website -->
@@ -84,6 +89,7 @@
 
             <div class="form-akun mt-2">
               <form action="" class="flex space-x-5">
+                <!-- AR Sekarang -->
                 <div class="relative z-0">
                   <input
                     type="number"
@@ -93,11 +99,13 @@
                   />
                   <label
                     for="currentAR"
-                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
                     >AR Sekarang</label
                   >
                 </div>
+                <!-- AR Sekarang -->
 
+                <!-- AR EXP -->
                 <div class="relative z-0">
                   <input
                     type="number"
@@ -107,11 +115,13 @@
                   />
                   <label
                     for="expAR"
-                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
                     >AR EXP</label
                   >
                 </div>
+                <!-- AR EXP -->
 
+                <!-- Target AR -->
                 <div class="relative z-0">
                   <input
                     type="number"
@@ -121,34 +131,39 @@
                   />
                   <label
                     for="targetAR"
-                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
                     >Target AR</label
                   >
                 </div>
+                <!-- Target AR -->
               </form>
             </div>
           </div>
 
-          <div class="daily mt-4">
+          <div class="daily mt-5">
+            <!-- Toggle nya -->
             <div class="flex space-x-2">
               <span class="dark:text-white">Hitung Perkiraan Hari?</span>
 
               <div class="daily-toggle">
                 <div class="flex items-center">
-                  <span class="mr-2 text-sm font-medium dark:text-white">Tidak</span>
+                  <span class="mr-2 text-base font-medium dark:text-white">Tidak</span>
                   <input type="checkbox" id="daily-toggle" class="hidden" />
                   <label for="daily-toggle">
                     <div class="relative mt-[2px] flex h-6 w-11 cursor-pointer items-center rounded-full bg-primary dark:bg-slate-500">
                       <div class="toggle-circle absolute top-[2px] left-[2px] h-5 w-5 rounded-full bg-white transition duration-300 ease-in-out sm:top-[2px]"></div>
                     </div>
                   </label>
-                  <span class="ml-2 text-sm font-medium dark:text-white">Ya</span>
+                  <span class="ml-2 text-base font-medium dark:text-white">Ya</span>
                 </div>
               </div>
             </div>
+            <!-- Toggle nya -->
 
+            <!-- Form nya -->
             <div class="form-daily hidden">
-              <form action="" class="mt-3 mb-4 flex space-x-5">
+              <form action="" class="mt-3 mb-2 flex justify-between space-x-5">
+                <!-- Daily Commission yang udah dikelarin -->
                 <div class="relative z-0">
                   <input
                     type="number"
@@ -158,11 +173,13 @@
                   />
                   <label
                     for="commision"
-                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
                     >Commission</label
                   >
                 </div>
+                <!-- Daily Commission yang udah dikelarin -->
 
+                <!-- Resin yang udah dihabisin -->
                 <div class="relative z-0">
                   <input
                     type="number"
@@ -172,31 +189,45 @@
                   />
                   <label
                     for="resin"
-                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
+                    class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
                     >Resin</label
                   >
                 </div>
+                <!-- Resin yang udah dihabisin -->
               </form>
             </div>
+            <!-- Form nya -->
           </div>
+
+          <!-- Tombol Hitung -->
+          <div class="tombolHitung mb-2">
+            <button
+              type="submit"
+              id="tombol"
+              class="mt-4 w-full rounded-full bg-transparent text-xl font-bold tracking-widest ring ring-primary hover:bg-cyan-700/40 hover:text-white dark:text-white dark:ring-slate-900 dark:hover:bg-slate-900/40"
+            >
+              Hitung
+            </button>
+          </div>
+          <!-- Tombol Hitung -->
         </div>
 
         <div class="hasil mt-3">
           <div class="hasil-exp mt-2 sm:ml-4">
-            <p class="text-sm font-semibold dark:text-white sm:text-lg">Butuh <span class="font-bold">[arEXP] AR EXP</span> lagi untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
+            <p class="text-sm font-semibold dark:text-white sm:text-center sm:text-xl">Butuh <span class="font-bold">[arEXP] AR EXP</span> lagi untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
 
             <div class="progress-bar mt-2">
               <div class="tulisan flex justify-between sm:mt-4">
-                <span class="self-end text-xs dark:text-white">Progress : [30%]</span>
-                <span class="self-end text-xs dark:text-white">[expAR]/[expNeeded]</span>
+                <span class="self-end text-sm dark:text-white">Progress : [30%]</span>
+                <span class="self-end text-sm dark:text-white">[expAR]/[expNeeded]</span>
               </div>
-              <div class="progress relative h-2 w-full overflow-hidden rounded-md bg-black dark:bg-white">
-                <div class="progress-fill h-full w-[30%] bg-white dark:bg-green-500"></div>
+              <div class="progress relative h-2 w-full overflow-hidden rounded-md bg-white dark:bg-white">
+                <div class="progress-fill h-full w-[30%] bg-green-500 dark:bg-green-500"></div>
               </div>
             </div>
           </div>
 
-          <div class="hasil-daily mt-3 hidden text-sm sm:mt-9 sm:ml-4 sm:text-lg">
+          <div class="hasil-daily mt-3 hidden text-lg sm:mt-9 sm:ml-4 sm:text-center sm:text-2xl">
             <p class="font-semibold dark:text-white"><span class="font-bold">&PlusMinus;[10] Hari</span> untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
           </div>
         </div>
