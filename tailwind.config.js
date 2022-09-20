@@ -8,8 +8,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        wadah: "#d1d5db",
-        primary: "#14b8a6",
+        primary: "#06B6D4",
+        secondary: "#10B4CD",
+        // tersier: "#CBE0E1",
       },
     },
   },
