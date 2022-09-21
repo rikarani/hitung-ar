@@ -12,6 +12,10 @@ module.exports = {
         secondary: "#10B4CD",
         // tersier: "#CBE0E1",
       },
+      fontFamily: {
+        tulisan: "Candara, Verdana, Helvetica, Arial, sans-serif",
+        angka: "Outfit, sans-serif",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
