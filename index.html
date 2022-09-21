@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- breakpoint sm buat responsive-->
 <!-- yang di dalam kurung siku nanti digenerate pakek JS -->
-<html lang="en">
+<html lang="en" class="font-tulisan">
   <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8" />
@@ -11,10 +11,25 @@
     <meta name="keywords" content="Genshin, Impact, AR Calculator" />
     <meta name="author" content="rikarani" />
     <!-- Meta Tags -->
+
     <title>AR Calculator</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="src/final.css" />
+    <!-- Custom Font -->
+    <!-- Font Buat Angka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Font Buat Angka -->
+
+    <!-- Font Buat Tulisan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Candara:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Font Buat Tulisan -->
+    <!-- Custom Font -->
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-cyan-100 dark:bg-slate-900">
     <!-- Navbar -->
@@ -36,14 +51,14 @@
         <!-- Toggle Dark Mode -->
         <div class="dark-toggle">
           <div class="flex dark:text-slate-300">
-            <span class="mr-2 text-sm font-medium">Light</span>
+            <span class="mr-2 text-sm font-bold">Light</span>
             <input type="checkbox" id="dark-toggle" class="hidden" />
             <label for="dark-toggle">
               <div class="relative flex h-6 w-11 cursor-pointer items-center rounded-full bg-primary dark:bg-slate-500">
                 <div class="toggle-circle absolute top-[2px] left-[2px] h-5 w-5 rounded-full bg-white transition duration-300 ease-in-out"></div>
               </div>
             </label>
-            <span class="ml-2 text-sm font-medium">Dark</span>
+            <span class="ml-2 text-sm font-bold">Dark</span>
           </div>
         </div>
         <!-- Toggle Dark Mode -->
@@ -94,8 +109,9 @@
                   <input
                     type="number"
                     id="currentAR"
-                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 font-angka text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
                     placeholder=" "
+                    required
                   />
                   <label
                     for="currentAR"
@@ -110,7 +126,7 @@
                   <input
                     type="number"
                     id="expAR"
-                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 font-angka text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
                     placeholder=" "
                   />
                   <label
@@ -126,8 +142,9 @@
                   <input
                     type="number"
                     id="targetAR"
-                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 font-angka text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
                     placeholder=" "
+                    required
                   />
                   <label
                     for="targetAR"
@@ -147,14 +164,14 @@
 
               <div class="daily-toggle">
                 <div class="flex items-center">
-                  <span class="mr-2 text-base font-medium dark:text-white">Tidak</span>
+                  <span class="mr-2 text-base font-bold dark:text-white">Tidak</span>
                   <input type="checkbox" id="daily-toggle" class="hidden" />
                   <label for="daily-toggle">
                     <div class="relative mt-[2px] flex h-6 w-11 cursor-pointer items-center rounded-full bg-primary dark:bg-slate-500">
                       <div class="toggle-circle absolute top-[2px] left-[2px] h-5 w-5 rounded-full bg-white transition duration-300 ease-in-out sm:top-[2px]"></div>
                     </div>
                   </label>
-                  <span class="ml-2 text-base font-medium dark:text-white">Ya</span>
+                  <span class="ml-2 text-base font-bold dark:text-white">Ya</span>
                 </div>
               </div>
             </div>
@@ -168,7 +185,7 @@
                   <input
                     type="number"
                     id="commission"
-                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 font-angka text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
                     placeholder=" "
                   />
                   <label
@@ -184,7 +201,7 @@
                   <input
                     type="number"
                     id="resin"
-                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
+                    class="peer block w-full appearance-none border-0 border-b-2 border-gray-900 bg-transparent py-2.5 px-0 font-angka text-sm text-slate-900 focus:border-gray-900 focus:outline-none focus:ring-0 dark:border-white dark:text-white"
                     placeholder=" "
                   />
                   <label
@@ -214,12 +231,12 @@
 
         <div class="hasil mt-3">
           <div class="hasil-exp mt-2 sm:ml-4">
-            <p class="text-sm font-semibold dark:text-white sm:text-center sm:text-xl">Butuh <span class="font-bold">[arEXP] AR EXP</span> lagi untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
+            <p class="text-sm font-bold dark:text-white sm:text-center sm:text-xl">Butuh <span class="font-angka font-bold">[600]</span> AR EXP lagi untuk mencapai AR <span class="font-angka font-bold">[30]</span></p>
 
             <div class="progress-bar mt-2">
               <div class="tulisan flex justify-between sm:mt-4">
-                <span class="self-end text-sm dark:text-white">Progress : [30%]</span>
-                <span class="self-end text-sm dark:text-white">[expAR]/[expNeeded]</span>
+                <span class="self-end font-angka text-sm dark:text-white">Progress : [30%]</span>
+                <span class="self-end font-angka text-sm dark:text-white">[300]/[900]</span>
               </div>
               <div class="progress relative h-2 w-full overflow-hidden rounded-md bg-white dark:bg-white">
                 <div class="progress-fill h-full w-[30%] bg-green-500 dark:bg-green-500"></div>
@@ -228,7 +245,7 @@
           </div>
 
           <div class="hasil-daily mt-3 hidden text-lg sm:mt-9 sm:ml-4 sm:text-center sm:text-2xl">
-            <p class="font-semibold dark:text-white"><span class="font-bold">&PlusMinus;[10] Hari</span> untuk mencapai <span class="font-bold">AR [targetAR]</span></p>
+            <p class="font-semibold dark:text-white"><span class="font-angka font-bold">&PlusMinus;[30]</span> Hari untuk mencapai AR <span class="font-angka font-bold">[90]</span></p>
           </div>
         </div>
       </div>
