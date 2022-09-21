@@ -1,16 +1,4 @@
 node_modules
-fonts/static/Outfit-Black.ttf
-fonts/static/Outfit-Bold.ttf
-fonts/static/Outfit-ExtraBold.ttf
-fonts/static/Outfit-ExtraLight.ttf
-fonts/static/Outfit-Light.ttf
-fonts/static/Outfit-Medium.ttf
-fonts/static/Outfit-SemiBold.ttf
-fonts/static/Outfit-Thin.ttf
-fonts/Candara_Bold.ttf
-fonts/Candara_Bold_Italic.ttf
-fonts/Candara_Italic.ttf
-fonts/aquarion.otf
 img/cara.png
 style.css
 src/input.css
