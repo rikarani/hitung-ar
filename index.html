@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- breakpoint sm buat responsive-->
 <!-- yang di dalam kurung siku nanti digenerate pakek JS -->
 <html lang="en" class="font-tulisan">
   <head>
@@ -14,20 +13,6 @@
 
     <title>AR Calculator</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-
-    <!-- Custom Font -->
-    <!-- Font Buat Angka -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <!-- Font Buat Angka -->
-
-    <!-- Font Buat Tulisan -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Candara:wght@400;700&display=swap" rel="stylesheet" />
-    <!-- Font Buat Tulisan -->
-    <!-- Custom Font -->
 
     <link rel="stylesheet" href="./src/final.css" />
   </head>
@@ -189,7 +174,7 @@
                     placeholder=" "
                   />
                   <label
-                    for="commision"
+                    for="commission"
                     class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-base text-gray-900 transition duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 dark:text-white dark:peer-focus:text-white"
                     >Commission</label
                   >
@@ -221,7 +206,7 @@
             <button
               type="submit"
               id="tombol"
-              class="mt-4 w-full rounded-full bg-transparent text-xl font-bold tracking-widest ring ring-primary hover:bg-cyan-700/40 hover:text-white dark:text-white dark:ring-slate-900 dark:hover:bg-slate-900/40"
+              class="mt-4 w-full rounded-full bg-transparent text-xl font-bold tracking-widest ring ring-primary dark:text-white dark:ring-slate-900 sm:hover:bg-cyan-700/40 sm:hover:text-white sm:dark:hover:bg-slate-900/40"
             >
               Hitung
             </button>
@@ -253,7 +238,9 @@
     <!-- Konten -->
 
     <!-- Script buat JS -->
-    <script src="src/script.js"></script>
+    <!-- Theme Config -->
+    <script src="src/app/theme.config.js"></script>
+    <!-- Theme Config -->
     <!-- Script buat JS -->
   </body>
 </html>
