@@ -164,7 +164,7 @@
 
             <!-- Form nya -->
             <div class="form-daily hidden">
-              <form action="" class="mt-3 mb-2 flex justify-between space-x-5">
+              <form action="" class="mt-3 mb-2 flex space-x-5">
                 <!-- Daily Commission yang udah dikelarin -->
                 <div class="relative z-0">
                   <input
@@ -206,7 +206,8 @@
             <button
               type="submit"
               id="tombol"
-              class="mt-4 w-full rounded-full bg-transparent text-xl font-bold tracking-widest ring ring-primary dark:text-white dark:ring-slate-900 sm:hover:bg-cyan-700/40 sm:hover:text-white sm:dark:hover:bg-slate-900/40"
+              disabled
+              class="mt-4 w-full rounded-full bg-transparent text-xl font-bold tracking-widest ring ring-primary disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-inherit disabled:hover:text-inherit dark:text-white dark:ring-slate-900 dark:disabled:hover:bg-inherit dark:disabled:hover:text-white sm:hover:bg-cyan-700/40 sm:hover:text-white sm:dark:hover:bg-slate-900/40"
             >
               Hitung
             </button>
@@ -214,9 +215,9 @@
           <!-- Tombol Hitung -->
         </div>
 
-        <div class="hasil mt-3">
+        <div class="hasil mt-3 hidden sm:invisible sm:block">
           <div class="hasil-exp mt-2 sm:ml-4">
-            <p class="text-sm font-bold dark:text-white sm:text-center sm:text-xl">Butuh <span class="font-angka font-bold">[600]</span> AR EXP lagi untuk mencapai AR <span class="font-angka font-bold">[30]</span></p>
+            <p class="text-sm font-bold dark:text-white sm:text-center sm:text-xl">Butuh <span class="ar-exp font-angka font-bold">600</span> AR EXP lagi untuk mencapai AR <span class="target-ar font-angka font-bold">30</span></p>
 
             <div class="progress-bar mt-2">
               <div class="tulisan flex justify-between sm:mt-4">
@@ -238,9 +239,7 @@
     <!-- Konten -->
 
     <!-- Script buat JS -->
-    <!-- Theme Config -->
-    <script src="src/app/theme.config.js"></script>
-    <!-- Theme Config -->
+    <script src="src/app/script.js" type="module"></script>
     <!-- Script buat JS -->
   </body>
 </html>
