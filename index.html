@@ -91,7 +91,7 @@
 
               <!-- Tulisan Error nya -->
               <div class="pesan float-left">
-                <p class="font-tulisan text-lg font-bold text-white">AR Sekarang lebih kecil dari Target AR</p>
+                <p class="font-tulisan text-lg font-bold text-white">Input Tidak Valid</p>
               </div>
               <!-- Tulisan Error nya -->
             </div>
@@ -229,21 +229,23 @@
 
         <div class="hasil mt-3 hidden sm:invisible sm:block">
           <div class="hasil-exp mt-2 sm:ml-4">
-            <p class="text-sm font-bold dark:text-white sm:text-center sm:text-xl">Butuh <span class="ar-exp font-angka font-bold">600</span> AR EXP lagi untuk mencapai AR <span class="target-ar font-angka font-bold">30</span></p>
+            <p class="text-sm font-bold dark:text-white sm:text-center sm:text-xl">
+              Butuh <span id="spanAR" class="font-angka font-bold">600</span> AR EXP lagi untuk mencapai AR <span id="spanTarget" class="font-angka font-bold">30</span>
+            </p>
 
             <div class="progress-bar mt-2">
               <div class="tulisan flex justify-between sm:mt-4">
-                <span class="self-end font-angka text-sm dark:text-white">Progress : [30%]</span>
-                <span class="self-end font-angka text-sm dark:text-white">[300]/[900]</span>
+                <span id="persen" class="self-end font-angka text-sm font-semibold dark:font-normal dark:text-white">Progress : 30%</span>
+                <span id="per" class="self-end font-angka text-sm font-semibold dark:font-normal dark:text-white">300/900</span>
               </div>
               <div class="progress relative h-2 w-full overflow-hidden rounded-md bg-white dark:bg-white">
-                <div class="progress-fill h-full w-[30%] bg-green-500 dark:bg-green-500"></div>
+                <div id="progress-fill" class="h-full bg-green-500 duration-1000 ease-in-out dark:bg-green-500"></div>
               </div>
             </div>
           </div>
 
           <div class="hasil-daily mt-3 hidden text-lg sm:mt-9 sm:ml-4 sm:text-center sm:text-2xl">
-            <p class="font-semibold dark:text-white"><span class="font-angka font-bold">&PlusMinus;[30]</span> Hari untuk mencapai AR <span class="font-angka font-bold">[90]</span></p>
+            <p class="font-semibold dark:text-white"><span id="spanHari" class="font-angka font-bold">&PlusMinus;30</span> Hari untuk mencapai AR <span id="spanTargetDaily" class="font-angka font-bold">90</span></p>
           </div>
         </div>
       </div>
@@ -252,8 +254,6 @@
 
     <!-- Script buat JS -->
     <script src="src/app/script.js" type="module"></script>
-
-    <script src="src/app/utils/math/input.checker.js"></script>
     <!-- Script buat JS -->
   </body>
 </html>
