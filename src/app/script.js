@@ -1,3 +1,4 @@
+// import function dari file lain
 import { Theme, keepTheme } from "./utils/theme/theme.checker.js"; // cek tema
 import { darkSwitch, lightSwitch } from "./utils/theme/theme.config.js"; // theme changer
 import { showDailyForm, hideDailyForm } from "./utils/web/daily.form.js"; // daily form
