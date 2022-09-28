@@ -13,6 +13,6 @@ export function applyDaily(expPerHari, expYangDibutuhkan, targetAR) {
   let hasil = Math.ceil(expYangDibutuhkan / expPerHari);
 
   // tempelin
-  spanHari.innerHTML = `&PlusMinus;${hasil}`;
-  spanTarget.innerHTML = targetAR;
+  spanHari.textContent = `\xB1${hasil}`;
+  spanTarget.textContent = targetAR;
 }

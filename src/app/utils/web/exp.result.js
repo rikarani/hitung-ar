@@ -4,8 +4,8 @@ export function applyEXP(hasil, target) {
   const spanAR = document.getElementById("spanAR");
   const spanTarget = document.getElementById("spanTarget");
 
-  spanAR.innerHTML = hasil;
-  spanTarget.innerHTML = target;
+  spanAR.textContent = hasil;
+  spanTarget.textContent = target;
 }
 
 export function applyProgress(arSekarang, expSekarang, expTarget) {
@@ -15,8 +15,8 @@ export function applyProgress(arSekarang, expSekarang, expTarget) {
 
   let persen = Math.floor((expSekarang / (AREXP[expTarget] - AREXP[arSekarang])) * 100);
 
-  spanPersen.innerHTML = `Progress : ${persen}%`;
-  spanPer.innerHTML = `${expSekarang}/${AREXP[expTarget] - AREXP[arSekarang]}`;
+  spanPersen.textContent = `Progress : ${persen}%`;
+  spanPer.textContent = `${expSekarang}/${AREXP[expTarget] - AREXP[arSekarang]}`;
 
   // ubah progress bar nya sesuai persenan
   const bar = document.getElementById("progress-fill");
