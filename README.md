@@ -10,5 +10,19 @@ Note :
 ---
 ## Usage / Examples
 
-![Contoh](https://cdn.discordapp.com/attachments/913761264369541200/1024713841885577299/usage.png)
+#### First Thing First
+![Kartu](https://cdn.discordapp.com/attachments/913761264369541200/1024713841885577299/usage.png)
 
+![Contoh](https://cdn.discordapp.com/attachments/913761264369541200/1024716389581344768/akun.PNG)
+
+not doing this, you can't click **Hitung** Button
+---
+#### How much time do i need to reach Target AR?
+
+![Daily Form](https://cdn.discordapp.com/attachments/913761264369541200/1024717395006341261/daily.PNG)
+
+**There are 2 Inputs, one for Commission and one for Resin**
+
+> Fill the **Commission** input with number of Daily Commission you've completed. (e.g. `4` if you completed 4 Daily Commission)
+
+> Fill the **Resin** input with number of Resin you've depleted. (e.g. `160` if you already using 160 resin)
