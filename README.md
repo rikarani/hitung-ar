@@ -23,6 +23,6 @@ not doing this, you can't click **Hitung** Button
 
 **There are 2 Inputs, one for Commission and one for Resin**
 
-> Fill the **Commission** input with number of Daily Commission you've completed. (e.g. `4` if you completed 4 Daily Commission)
+Fill the **Commission** input with number of Daily Commission you've completed. (e.g. `4` if you completed 4 Daily Commission)
 
-> Fill the **Resin** input with number of Resin you've depleted. (e.g. `160` if you already using 160 resin)
+Fill the **Resin** input with number of Resin you've depleted. (e.g. `160` if you already using 160 resin)
