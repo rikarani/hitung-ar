@@ -16,6 +16,7 @@ Note :
 ![Contoh](https://cdn.discordapp.com/attachments/913761264369541200/1024716389581344768/akun.PNG)
 
 not doing this, you can't click **Hitung** Button
+
 ---
 #### How much time do i need to reach Target AR?
 
