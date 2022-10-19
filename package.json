@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "gas": "npx tailwindcss -i ./src/input.css -o ./style.css --watch",
-    "build": "webpack"
+    "minify": "npx tailwindcss -i ./src/input.css -o ./src/final.css --minify"
   },
   "keywords": [],
   "author": "",
