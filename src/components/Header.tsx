@@ -14,7 +14,7 @@ export default function Header(): React.JSX.Element {
           <img src="/logo.webp" alt="Paimin" className="mx-auto h-32 w-32" />
         </div>
         <div>
-          <Typography variant="lead" color="gray" className="mt-3 text-center font-semibold text-slate-300">
+          <Typography variant="lead" color="gray" className="mt-3 px-3 text-center font-semibold text-slate-300">
             Tools Sederhana Untuk Menghitung AR EXP yang dibutuhkan untuk mencapai Target AR
           </Typography>
         </div>
