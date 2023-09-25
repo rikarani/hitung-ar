@@ -12,9 +12,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
     "@material-tailwind/react": "^2.1.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.2",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/node": "^20.6.4",
