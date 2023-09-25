@@ -11,8 +11,8 @@ export default function Form(): React.JSX.Element {
     sekarang: z.coerce.number().min(1, { message: "Minimal AR 1" }).max(60, { message: "Maksimal AR 60" }),
     target: z.coerce
       .number()
-      .min(target + 1, { message: "Target Salah" })
-      .max(60, { message: "Salah" }),
+      .min(target === 60 ? target : target + 1, { message: "Target harus lebih tinggi" })
+      .max(60, { message: "Maksimal AR 60" }),
   });
 
   const {
@@ -23,8 +23,6 @@ export default function Form(): React.JSX.Element {
     resolver: zodResolver(schema),
   });
 
-  const { name, onBlur, ref } = register("sekarang");
-
   return (
     <div>
       <form className="mt-1.5" onSubmit={handleSubmit((data) => console.log({ ...data }))}>
@@ -33,11 +31,18 @@ export default function Form(): React.JSX.Element {
         </Typography>
         <div className="mt-2.5 space-y-4">
           <div>
-            <Input name={name} onBlur={onBlur} ref={ref} onChange={(e) => setTarget(parseInt(e.target.value))} label="AR Sekarang" variant="outlined" color="white" />
+            <Input
+              type="number"
+              onKeyDown={(e) => ["e", "E", "+", "-"].includes(e.key) && e.preventDefault()}
+              {...register("sekarang", { onChange: (e) => setTarget(parseInt(e.target.value)) })}
+              label="AR Sekarang"
+              variant="outlined"
+              color="white"
+            />
             <Typography className="mt-0.5 text-red-200">{errors?.sekarang?.message || ""}</Typography>
           </div>
           <div>
-            <Input {...register("target")} label="Target AR" variant="outlined" color="white" />
+            <Input type="number" onKeyDown={(e) => ["e", "E", "+", "-"].includes(e.key) && e.preventDefault()} {...register("target")} label="Target AR" variant="outlined" color="white" />
             <Typography className="text-red-200">{errors?.target?.message || ""}</Typography>
           </div>
           <Button type="submit" fullWidth variant="outlined" className="border-slate-300 py-1.5 text-lg capitalize text-slate-300 focus:ring-0">
