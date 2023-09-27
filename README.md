@@ -15,4 +15,6 @@ remake dari [versi HTML](https://github.com/rikarani/hitung-ar/tree/html) sebelu
 
 ## tudu
 
-benerin file `Main.tsx`
+1. benerin file `Main.tsx`
+2. refaktor komponen
+3. dll
