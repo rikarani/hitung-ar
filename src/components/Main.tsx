@@ -50,7 +50,7 @@ export default function Main(): React.JSX.Element {
               {(data.butuh && `${data.exp} / ${data.butuh}`) || ""}
             </Typography>
           </div>
-          <Progress value={sekarang === 60 ? 100 : data.progress} size="md" color="green" className="mt-1" />
+          <Progress value={sekarang === 60 ? 100 : data.progress} size="md" color="green" className={`mt-1 ${formState.isSubmitted ? undefined : "mb-3"}`} />
           <Typography variant="paragraph" color="white" className="mb-1 mt-1">
             {sekarang === 60 ? "" : (data.hari && `Butuh ±${Math.ceil(data.hari)} Hari untuk mencapai AR ${data.target}`) || ""}
           </Typography>
