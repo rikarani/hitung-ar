@@ -2,13 +2,13 @@
 
 Tools Sederhana Untuk Menghitung AR EXP yang dibutuhkan untuk mencapai Target AR
 
-remake dari versi HTML sebelumnya
+remake dari [versi HTML](https://github.com/rikarani/hitung-ar/tree/html) sebelumnya
 
 ---
 
-## heh
+## stuck
 
-1. React + TS
-2. Tailwind
-3. react-hook-form
-4. zod
+1. [React + TS](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+2. [Tailwind](https://tailwindcss.com/docs/installation)
+3. [React Hook Form](https://react-hook-form.com/)
+4. [Zod](https://zod.dev/)
