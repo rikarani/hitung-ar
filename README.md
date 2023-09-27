@@ -12,3 +12,7 @@ remake dari [versi HTML](https://github.com/rikarani/hitung-ar/tree/html) sebelu
 2. [Tailwind](https://tailwindcss.com/docs/installation)
 3. [React Hook Form](https://react-hook-form.com/)
 4. [Zod](https://zod.dev/)
+
+## tudu
+
+benerin file `Main.tsx`
