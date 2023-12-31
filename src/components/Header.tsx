@@ -12,7 +12,7 @@ export default function Header(): React.JSX.Element {
       </Navbar>
       <div>
         <div>
-          <img src="/logo.webp" alt="Paimin" className="mx-auto h-32 w-32" />
+          <img src="logo.webp" alt="Paimin" className="mx-auto h-32 w-32" />
         </div>
         <div>
           <Typography variant="lead" color="gray" className="mt-3 px-3 text-center font-semibold leading-snug text-slate-300">
